@@ -1,0 +1,76 @@
+/*body*/
+body{
+font-family: 'Handjet';
+background-color: #ff9526;
+}
+
+
+/*header*/
+h1.heading{
+    display: grid;
+    justify-content: center;
+    font-size: xx-large;
+    color: wheat;
+    text-shadow: 2px 0px #1b3d17;
+}
+
+
+/*main*/
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.statusText{
+    margin: auto;
+    color: wheat;
+    font-size: 80px;
+    text-shadow: 2px 0px #1b3d17;
+}
+
+
+button#restartBtn{
+    background-color:#4faf44;
+    border-radius: 5px;
+    border-color: #1b3d17;
+    color: wheat;
+    font-size: large;
+    width: 100px;
+    margin: auto;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+
+button#rstbtn:hover{
+    cursor: pointer;
+}
+.gameboard{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 20px;
+    margin-top: 70px
+}
+
+
+[cellIndex*="0"], [cellIndex*="1"], [cellIndex*="2"], [cellIndex*="3"], [cellIndex*="4"], [cellIndex*="5"]{
+    border-bottom: solid 5px;
+    border-color: wheat;
+}
+
+
+[cellIndex*="0"], [cellIndex*="1"],[cellIndex*="3"],[cellIndex*="4"],[cellIndex*="6"],[cellIndex*="7"]{
+    border-right: wheat solid 5px;
+}
+
+
+.cell{
+    font-size: 50px;
+    color: #ef4423;
+    cursor: pointer;
+    text-align: center;
+}
