@@ -60,17 +60,25 @@ button#rstbtn:hover{
 [cellIndex*="0"], [cellIndex*="1"], [cellIndex*="2"], [cellIndex*="3"], [cellIndex*="4"], [cellIndex*="5"]{
     border-bottom: solid 5px;
     border-color: wheat;
+    box-shadow: 2px 0px 10px #bbbbbbd0;
 }
 
 
 [cellIndex*="0"], [cellIndex*="1"],[cellIndex*="3"],[cellIndex*="4"],[cellIndex*="6"],[cellIndex*="7"]{
     border-right: wheat solid 5px;
+    box-shadow: 2px 0px 10px #bbbbbbd0;
+}
+
+
+[cellIndex*="8"]{
+    box-shadow: 2px 0px 10px #bbbbbbd0;
 }
 
 
 .cell{
     font-size: 50px;
-    color: #ef4423;
+    color: #f6eb14;
     cursor: pointer;
     text-align: center;
+    padding-top: 20px;
 }
