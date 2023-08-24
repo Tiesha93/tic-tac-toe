@@ -112,4 +112,6 @@ svg{
 
 svg:hover{
     color: #009688;
+    transform: rotate(360deg);
+    transition-duration: 1s;
 }
