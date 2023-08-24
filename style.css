@@ -29,7 +29,7 @@ h1.heading{
     color: #009688;
     font-size: 40px;
     text-shadow: 2px 0px #f5deb3d0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
 }
 
 
@@ -49,11 +49,13 @@ button#restartBtn{
 button#rstbtn:hover{
     cursor: pointer;
 }
+
+
 .gameboard{
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
-    gap: 20px;
+    gap: 8px;
     margin-top: 50px;
 }
 
@@ -61,18 +63,18 @@ button#rstbtn:hover{
 [cellIndex*="0"], [cellIndex*="1"], [cellIndex*="2"], [cellIndex*="3"], [cellIndex*="4"], [cellIndex*="5"]{
     border-bottom: solid 5px;
     border-color: wheat;
-    box-shadow: 2px 0px 10px #bbbbbbd0;
+    box-shadow: 2px 0px 10px #585656d0;
 }
 
 
 [cellIndex*="0"], [cellIndex*="1"],[cellIndex*="3"],[cellIndex*="4"],[cellIndex*="6"],[cellIndex*="7"]{
     border-right: wheat solid 5px;
-    box-shadow: 2px 0px 10px #bbbbbbd0;
+    box-shadow: 2px 0px 10px #585656d0;
 }
 
 
 [cellIndex*="8"]{
-    box-shadow: 2px 0px 10px #bbbbbbd0;
+    box-shadow: 2px 0px 10px #585656d0;
 }
 
 
@@ -109,5 +111,5 @@ svg{
 
 
 svg:hover{
-    color: #ff9526;
+    color: #009688;
 }
