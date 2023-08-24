@@ -9,7 +9,7 @@ background-color: #ff9526;
 h1.heading{
     display: grid;
     justify-content: center;
-    font-size: xx-large;
+    font-size: 80px;
     color: wheat;
     text-shadow: 2px 0px #1b3d17;
 }
@@ -27,7 +27,7 @@ h1.heading{
 .statusText{
     margin: auto;
     color: wheat;
-    font-size: 80px;
+    font-size: 50px;
     text-shadow: 2px 0px #1b3d17;
 }
 
@@ -81,4 +81,31 @@ button#rstbtn:hover{
     cursor: pointer;
     text-align: center;
     padding-top: 20px;
+}
+
+
+/*footer*/
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    gap: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-color: #bbbbbbd0;
+}
+
+
+svg{
+    font-size: 20px;
+    color: black;
+}
+
+
+svg:hover{
+    color: #ff9526;
 }
