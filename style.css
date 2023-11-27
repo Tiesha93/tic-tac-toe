@@ -1,12 +1,13 @@
 /*body*/
-body{
+body {
 font-family: 'Handjet';
 background-color: #ff9526;
 }
 
 
 /*header*/
-h1.heading{
+
+h1.heading {
     display: grid;
     justify-content: center;
     font-size: 60px;
@@ -16,7 +17,8 @@ h1.heading{
 
 
 /*main*/
-.container{
+
+.container {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -24,7 +26,7 @@ h1.heading{
 }
 
 
-.statusText{
+.statusText {
     margin: auto;
     color: #009688;
     font-size: 40px;
@@ -33,7 +35,7 @@ h1.heading{
 }
 
 
-button#restartBtn{
+button#restartBtn {
     background-color:#009688;
     border-radius: 5px;
     border-color: #009688d0;
@@ -46,12 +48,12 @@ button#restartBtn{
 }
 
 
-button#rstbtn:hover{
+button#rstbtn:hover {
     cursor: pointer;
 }
 
 
-.gameboard{
+.gameboard {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
@@ -60,25 +62,25 @@ button#rstbtn:hover{
 }
 
 
-[cellIndex*="0"], [cellIndex*="1"], [cellIndex*="2"], [cellIndex*="3"], [cellIndex*="4"], [cellIndex*="5"]{
+[cellIndex*="0"], [cellIndex*="1"], [cellIndex*="2"], [cellIndex*="3"], [cellIndex*="4"], [cellIndex*="5"] {
     border-bottom: solid 5px;
     border-color: wheat;
     box-shadow: 2px 0px 10px #585656d0;
 }
 
 
-[cellIndex*="0"], [cellIndex*="1"],[cellIndex*="3"],[cellIndex*="4"],[cellIndex*="6"],[cellIndex*="7"]{
+[cellIndex*="0"], [cellIndex*="1"], [cellIndex*="3"], [cellIndex*="4"], [cellIndex*="6"], [cellIndex*="7"] {
     border-right: wheat solid 5px;
     box-shadow: 2px 0px 10px #585656d0;
 }
 
 
-[cellIndex*="8"]{
+[cellIndex*="8"] {
     box-shadow: 2px 0px 10px #585656d0;
 }
 
 
-.cell{
+.cell {
     font-size: 50px;
     color: #009688;
     text-shadow: 2px 0px #f5deb3d0;
@@ -89,28 +91,31 @@ button#rstbtn:hover{
 
 
 /*footer*/
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1440px;
-    gap: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    background-color: #bbbbbbd0;
+
+@media screen and (max-width: 2560px)  {
+    footer {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        background-color: #bbbbbbd0;
+    }
 }
 
 
-svg{
+svg {
     font-size: 20px;
     color: black;
 }
 
 
-svg:hover{
+svg:hover {
     color: #009688;
     transform: rotate(360deg);
     transition-duration: 1s;
